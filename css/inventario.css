@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Raleway:wght@400;600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+main{ /*Contenido Principal */
+    margin: 0%;
+    padding: 0%;
+    background-color: #f7f7f7;
+    margin-top: -10px; /*usé esto porque al bajar con el header fixed, habia un espacio en el que se 
+    veia el fondo */
+    min-height: 100vh;
+
+}
+main h1{
+    text-align: center;
+}
+header{ /*Header que contiene logo y opciones */
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0 ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 3;
+    gap: 130px;
+    text-align: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+
+}
+header img{ /*propiedades para la imagen dentro del header */
+    width: 500px;
+    height: 100px;
+    margin: 0%;
+    margin-top: 2%;
+    margin-right: 30px;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+
+
+header a:hover{
+    transform: translateY(-5px); /* Levanta el enlace */
+}
+.containerR{
+    color: #000000;
+    border-radius: 10px;
+    width: 800px;
+    height: auto;
+    margin:  1px auto; /* centrado (auto) */
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px rbga(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-image: url(/img/inventario.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.containerR button{
+    background-color: #ffffff;
+    border: none;
+    color: rgb(10, 10, 10);
+    font-size: 20px;
+    margin: 2%;
+    padding: 5px 30%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    
+}
+
+
+.containerR button:hover{
+    transform: translateY(-5px); /* Levanta el enlace */
+    color: #007ec8;
+    transition: 2s;
+    background-color: #f7f7f7;
+}
+.containerR #fecha, #paquete, #usuario, #Contraseña, #Contraseñar, #Nombre, #apellido, #gender, #doc, #tel, #subjects, #email, #messages, #can, #pre, #dateday{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin: 0%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+   
+    
+}
+.containerR  #usuario:hover, #Contraseña:hover, #gender:hover, #Nombre:hover, #apellido:hover, #doc:hover, #Contraseñar:hover, #tel:hover, #subjects:hover, #email:hover, #dateday:hover{
+    transform: translateY(-5px);
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus,input[type="date"]:focus, select[name="fecha"]:focus
+,select[name="gender"]:focus, input[type="email"]:focus, textarea[name="message"]:focus, select[name="subject"]:focus,select[name="subjects"]:focus,textarea[name="messages"]:focus, input[id="dateday"]:focus{
+    outline: none;
+    
+    
+
+}
+.containerR h3{
+    font-size: 15px;
+}
+.he{
+    background-color: white;
+    height: auto;
+    padding: 1px 330px;
+    border-radius: 5px;
+    font-size: large;
+    
+}
+.containerR a{
+    color: #000000;
+    transition: transform 0.2s ease;
+    
+}
+
+footer{
+    background-color:#007ec8 ;
+    color: #f7f7f7;
+    display: flex;
+    width: 100%;
+    gap: 73.5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.contactenos{
+    border: 1px solid white;
+    text-align: center;
+    width: 300px;
+   
+    
+}
+.contactenos #name, #emails, #message, #subject{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px ;
+    width: 70%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+.contactenos #name:hover, #emails:hover, #message:hover, #subject:hover{
+    transform: translateY(-5px);
+}
+.contactenos button{
+    background-color: #ffffff;
+    border: none;
+    color: rgb(10, 10, 10);
+    font-size: 20px;
+    padding: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    
+}
+.tc{
+    padding: 17px;
+}
+.tc h1{
+    font-size: 40px;
+
+    
+}
+.contactenos button:hover{
+    transform: translateY(-5px); /* Levanta el enlace */
+    color: #007ec8;
+    transition: 2s;
+    background-color: #f7f7f7;
+}
+
+.metod{
+    
+    width: 500px;
+    overflow: hidden;
+    border: 1px solid white;
+   
+    
+}
+.imgcre{
+    width: 700px;
+    height: 200px; 
+    margin-left: -11px;
+}
+
+.redes{
+    border: 1px solid white;
+    text-align: center;
+    width: 300px;
+    
+}
+.imgr{
+    width: 100px;
+    height: 100px;
+}
+main h1{
+    text-align: center;
+    
+}
+.Introduccion h1{
+    font-size: 50px;
+
+}
+.Introduccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}

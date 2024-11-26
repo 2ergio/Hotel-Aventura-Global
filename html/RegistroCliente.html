@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Cliente</title>
+    <link rel="stylesheet" href="/css/registrocliente.css">
+    <link rel="icon" href="/img/logo aventura global globo.png" type="image/png">
+</head>
+<body>
+    <main>
+        <header>
+            <a href="/html/InicioDeSesión.html"><h1>Inicio De <br> Sesión</h1></a>
+            <a href="/html/index.html"><img src="/img/logo aventura global.png" alt="Aventura" class="headerImg" ></a>
+            <a href="/html/RegistroCliente.html"><h1 >Registro<br>Cliente</h1></a>
+        </header> <br> <br> <br> <br> <br> <br> <br>
+        <div class="containerR">
+            <form> 
+                <div class="he">
+                    <h2>Registro De Clientes</h2>
+                </div>
+                <label for="usuario"> <h2>Introduce Un Nombre de Usuario:</h2></label>
+                <input type="text" id="usuario" name="usuario" required > <br> <br>
+            
+                <label for="Contraseña"><h2 class="t">Introduce una Contraseña:</h2></label>
+                <input type="password" id="Contraseña" name="Contraseña" required> <br> <br>
+
+                <label for="Contraseña"><h2 class="t">Repite Tu Contraseña:</h2></label>
+                <input type="password" id="Contraseñar" name="Contraseñar" required> <br> <br>
+
+                <label for="email"><h2>Correo Electrónico:</h2></label>
+                <input type="email" id="email" name="email"  required><br> <br>
+
+                <label for="doc"> <h2>Introduce tu Número Telefónico: </h2> </label>
+                <input type="number" id="tel" name="tel" required><br><br>
+
+                <label for="gender"><h2>Elija su Género: </h2></label>
+                <select id="gender" name="gender" required>
+                    <option value= "" disabled selected>Seleccione una Opción</option>
+                    <option value= "1">Hombre</option>
+                    <option value= "2">Mujer</option>
+                    <option value= "3">Otro</option>
+                </select required><br> <br>
+
+                
+                <label for="nombre"> <h2>Introduce Tu Nombre:</h2></label>
+                <input type="text" id="Nombre" name="Nombre" required > <br> <br>
+
+                <label for="apellido"> <h2>Introduce Tu Apellido:</h2></label>
+                <input type="text" id="apellido" name="apellido" required > <br> <br>
+
+            
+                <label for="subject"><h2>Elija su Tipo de Documento: </h2></label >
+                        <select id="subject" name="subject" required>
+                            <option value= "" disabled selected>Selecciona Una Opción</option>
+                            <option value= "1">Cedula de Ciudadanía</option>
+                            <option value= "2">Permiso Especial de permanencia</option>
+                            <option value= "3">Permiso Especial transitorio</option>
+                        </select ><br> <br>
+                <label for="doc"> <h2>Introduce tu Número de Documento: </h2> </label>
+                <input type="number" id="doc" name="doc" required><br><br>
+
+                
+                <button type="submit"> <h3>Registrarse</h3></button> <br>
+            </form>
+        </div> <br> <br>
+    </main>
+        <footer>
+            
+
+            <section class="contactenos">
+                <div class="tc"><h1 id="contacto">Contáctenos</h1>
+                </div>
+                <form>
+                    
+                    <label for="name"><h2>Nombre: </h2></label>
+                    <input type="text" id="name" name="name" required> 
+
+                    <label for="emails"><h2>Correo Electrónico:</h2></label>
+                    <input type="email" id="emails" name="emails"  required><br>
+
+                    <label for="subjects"><h2>Asunto a tratar: </h2></label>
+                    <select id="subjects" name="subjects" required>
+                    <option value= "" disabled selected>Selecciona Una Opción</option>
+                    <option value= "1">Quejas</option>
+                    <option value= "2">Atención al Cliente</option>
+                    <option value= "3">Soporte Técnico</option>
+                    <option value= "4">Sugerencias</option>
+                    </select><br>
+                    <label for="message"><h2>Mensaje: </h2></label>
+                    <textarea name="message" id="message" rows="6" required></textarea><br><br>
+                    <button type="submit">Enviar</button><br><br>
+                </form>
+            </section>
+            <section class="metod">
+                <h1>Metodos de pago: </h1>
+                <img src="/img/Credit-Card-Icons.png" alt="credit" class="imgcre"><br>
+                <img src="/img/iconsCol.png" alt="img2" class="imgcre">
+            </section>
+            <section class="redes">
+                <h1>Redes Sociales:</h1>
+                <img src="/img/facebok.png" alt="f" class="imgr"><br> <br> <br> <br>
+                <img src="/img/instagram.png" alt="i" class="imgr"><br> <br> <br> <br>
+                <img src="/img/twitter.png" alt="x" class="imgr">
+            </section>
+        
+            <h1>Copyright © 2024 Aventura Global. All Rights Reserved</h1>
+        </footer>
+
+
+</body>
+</html>

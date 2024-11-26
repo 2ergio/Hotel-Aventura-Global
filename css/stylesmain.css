@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Raleway:wght@400;600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+html {
+    scroll-behavior: smooth; /* Efecto suave */
+}
+main{ /*Contenido Principal */
+    margin: 0%;
+    padding: 0%;
+    background-color: #f7f7f7;
+    margin-top: -10px; /*usé esto porque al bajar con el header fixed, habia un espacio en el que se 
+    veia el fondo */
+    min-height: 100vh;
+
+}
+main h1{
+    text-align: center;
+}
+header{ /*Header que contiene logo y opciones */
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0 ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 3;
+    gap: 130px;
+    text-align: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+
+}
+header img{ /*propiedades para la imagen dentro del header */
+    width: 500px;
+    height: 100px;
+    margin: 0%;
+    margin-top: 2%;
+    margin-right: 30px;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.ImgGrande1{
+    background-image: url(/img/francesca-saraco-_dS27XGgRyQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+header a:hover{
+    transform: translateY(-5px); /* Levanta el enlace */
+}
+.Bienvenida{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(244, 236, 236);
+    width: 300px;
+    align-items: center;
+    height: 90px;
+    text-align: center;
+    margin-top: 350px;
+}
+.ImgGrande1 a{
+    text-decoration: none;
+    color: black;
+}
+.ImgGrande1 .Bienvenida{
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.ImgGrande1 .Bienvenida:hover{
+    transform: translateY(-5px); /* Levanta el enlace */
+}
+/* propiedades de sidemenú */
+.sidenav {
+    height: 100%; /* Hace que la barra lateral ocupe toda la altura de la pantalla */
+    width: 0; /* Inicialmente oculta la barra lateral (ancho 0) */
+    position: fixed; /* Fija la barra lateral en una posición en la pantalla */
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+    top: 0; /* Posiciona la barra lateral en la parte superior */
+    left: 7px; /* Posiciona la barra lateral a la izquierda */
+    background-color: #007ec8; /* Color de fondo de la barra lateral (negro oscuro) */
+    overflow: hidden; /* Oculta el contenido que excede el área de la barra lateral */
+    transition: 0.5s; /* Transición suave para cambios de ancho */
+    padding-top: 30px; /* Espacio en la parte superior para los enlaces */
+    margin-top: 10.8%;
+    
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px; /* Espaciado interno dentro de cada enlace */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 25px; /* Tamaño de fuente para los enlaces */
+    color: rgb(255, 255, 255); /* Color del texto de los enlaces */
+    display: block; /* Cada enlace se comporta como un bloque, ocupando todo el ancho */
+    transition: 0.3s; /* Transición suave para el cambio de color */
+    cursor: pointer;
+    
+}
+
+.sidenav a:hover {
+    color: #000000; /* Cambia el color del texto al pasar el ratón sobre el enlace */
+}
+
+.openbtn {
+    font-size: 20px; /* Tamaño de fuente para el botón de abrir la barra lateral */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    background-color: rgba(17, 16, 16, 0.067); /* Color de fondo del botón (rojo) */
+    color: white; /* Color del texto del botón */
+    padding: 10px 15px; /* Espaciado interno del botón */
+    border: 1px solid rgba(17, 16, 16, 0.067) ; /* Sin borde para el botón */
+    transition: transform 0.2s ease;
+}
+
+.openbtn:hover {
+    background-color: #1ea2ef; /* Cambia el color de fondo al pasar el ratón sobre el botón */
+    transform: translateY(-5px);
+}
+
+.container{
+    margin: 0%;
+    margin-top: 28%;
+    position: fixed;
+}
+/* Aqui terminan las propiedades del sidemmenú */
+.ImgGrande2{
+    background-image: url(/img/img-grande2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.Introduccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.Introduccion h1{
+    font-size: 50px;
+
+}
+
+.bloqueintro{
+    background-color: white;
+    
+    font-size: 30px;
+
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.Introduccion li{
+    text-align: center;
+
+}
+.Diferen{
+    display: flex;
+    gap: 30px;
+}
+.Diferen p{
+    margin: 2%;
+}
+/*Aqui comienza los estilos de las card de habitaciones */
+.CH{
+    display: flex;
+    flex-direction: column;
+}
+.habitaciones{
+    width: 750px;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin: auto;
+    
+}
+
+.imgC{
+    width: 40%;
+}
+.textC{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    padding: 0 15px;
+}
+
+.imgC img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.title{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.info{
+    font-size: 16px;
+}
+
+/*Aqui terminan las propiedades de las habitaciones */
+
+/* aqui empiezan las propiedades de los paquetes, muy similares a las de habitaciones */
+.PQ{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+.paquetes{
+    width: 600px;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin: auto;
+    
+    
+    
+}
+
+.imgP{
+    width: 50%;
+    
+}
+.textP{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    padding: 0 15px;
+}
+
+.imgP img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.title{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.info{
+    font-size: 16px;
+}
+/*Aqui terminan */
+.containerR{
+    color: #000000;
+    border-radius: 10px;
+    width: 800px;
+    height: auto;
+    margin:  1px auto; /* centrado (auto) */
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px rbga(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-image: url(/img/cuarto-white.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.containerR button{
+    background-color: #ffffff;
+    border: none;
+    color: rgb(10, 10, 10);
+    font-size: 20px;
+    margin: 2%;
+    padding: 5px 30%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    
+}
+
+
+.containerR button:hover{
+    transform: translateY(-5px); /* Levanta el enlace */
+    color: #007ec8;
+    transition: 2s;
+    background-color: #f7f7f7;
+}
+.containerR #fecha, #paquete, #usuario, #Contraseña{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin: 0%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+   
+    
+}
+.containerR #fecha:hover, #paquetes:hover, #usuario:hover, #Contraseña:hover, #paquete:hover{
+    transform: translateY(-5px);
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus,input[type="date"]:focus, select[name="fecha"]:focus
+,select[name="paquete"]:focus, input[type="email"]:focus, textarea[name="message"]:focus, select[name="subject"]:focus, select[name="docs"]:focus
+{
+    outline: none;
+    
+    
+
+}
+.containerR h3{
+    font-size: 15px;
+}
+.containerR2{
+    color: #000000;
+    
+    border-radius: 10px;
+    width: 800px;
+    height: auto;
+    margin:  1px auto; /* centrado (auto) */
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px rbga(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-image: url(/img/reservaimg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.containerR2 #user, #password, #docs, #dateday, #age, #email{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px ;
+    width: 70%;
+    border-radius: 5px;
+    border: none;
+    margin: 0%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+.containerR2 #user:hover, #password:hover, #docs:hover, #dateday:hover, #age:hover{
+    transform: translateY(-5px);
+}
+ .he{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding: 5px 230px;
+    border-radius: 5px;
+ }
+ .containerR2 button{
+    background-color: #ffffff;
+    border: none;
+    color: rgb(10, 10, 10);
+    font-size: 20px;
+    margin: 2%;
+    padding: 5px 30%;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    
+}
+.containerR2 h3{
+    font-size: 15px;
+}
+.containerR2 button:hover{
+    transform: translateY(-5px); /* Levanta el enlace */
+    color: #007ec8;
+    transition: 2s;
+    background-color: #f7f7f7;
+}
+footer{
+    background-color:#007ec8 ;
+    color: #f7f7f7;
+    display: flex;
+    width: 100%;
+    gap: 73.5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contactenos{
+    border: 1px solid white;
+    text-align: center;
+    width: 300px;
+   
+    
+}
+.contactenos #name, #emails, #message, #subject{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px ;
+    width: 70%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+.contactenos #name:hover, #emails:hover, #message:hover, #subject:hover{
+    transform: translateY(-5px);
+}
+.contactenos button{
+    background-color: #ffffff;
+    border: none;
+    color: rgb(10, 10, 10);
+    font-size: 20px;
+    padding: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    
+}
+.tc{
+    padding: 17px;
+}
+.tc h1{
+    font-size: 40px;
+
+    
+}
+.contactenos button:hover{
+    transform: translateY(-5px); /* Levanta el enlace */
+    color: #007ec8;
+    transition: 2s;
+    background-color: #f7f7f7;
+}
+
+.metod{
+    
+    width: 500px;
+    overflow: hidden;
+    border: 1px solid white;
+    
+}
+.imgcre{
+    width: 700px;
+    height: 200px; 
+    margin-left: -11px;
+}
+
+.redes{
+    border: 1px solid white;
+    text-align: center;
+    width: 300px;
+    
+}
+.imgr{
+    width: 100px;
+    height: 100px;
+}
